@@ -63,7 +63,7 @@ type any command , in this case I typed -k and [file name] and make sure that ar
 G. If you request to transfer a file that is already located in the client directory, you will be asked if you want to overwrite the file or not. You can either say yes or no - this was taken from one of the references provided in the code</br>
 
 
-#***********PLEASE NOTE: I had issues with the random charactes appending to the end of the file when it was transfered.********************
+***********PLEASE NOTE: I had issues with the random charactes appending to the end of the file when it was transfered.********************
 Following suggestions on the following blog: http://stackoverflow.com/questions/1424763/appending-data-to-a-null-character-in-character-array-to-send-data-through-socke
 However, according to that blog I should have done something like this:
 out_buffer = (char*)malloc(fsize + 2);
