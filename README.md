@@ -74,11 +74,11 @@ out_buffer = (char*)malloc(fsize + 1);
 out_buffer [fsize] = '\0';
 It seems to work, but in case you've notice that some of the files that are transfered have random charactes at the end, it has something to do with NULL character at the end
 
-#**********PLEASE NOTE: THE LARGEST SIZE THAT CAN BE TRANSTERED IS: 262144 BYTES. **************************************************
+**********PLEASE NOTE: THE LARGEST SIZE THAT CAN BE TRANSTERED IS: 262144 BYTES. **************************************************
 That can be change in the ftclient.py file by changing the bytes number in the following line: buffer = cmndSocket1.recv(262144)
 The recommendation is to multiply bytes numbers by 2 to get to a large number
 
-#****************PLEASE NOTE: THERE IS NO ERROR CHECK TO INCORRECTLY ENTERED IP OR PORT #S********************************************
+****************PLEASE NOTE: THERE IS NO ERROR CHECK TO INCORRECTLY ENTERED IP OR PORT #S********************************************
 program will have erratically if invalid entry is make for port # or IP#
 
 
